@@ -18,6 +18,10 @@ class $AssetsImagesGen {
   /// File path: assets/images/Frame.svg
   String get frame => 'assets/images/Frame.svg';
 
+  /// File path: assets/images/Rectangle.png
+  AssetGenImage get rectangle =>
+      const AssetGenImage('assets/images/Rectangle.png');
+
   /// File path: assets/images/balance.svg
   String get balance => 'assets/images/balance.svg';
 
@@ -57,6 +61,7 @@ class $AssetsImagesGen {
   List<dynamic> get values => [
         dashboard,
         frame,
+        rectangle,
         balance,
         comments,
         files,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tablet_design/core/widgets/main_app_bar.dart';
 import 'package:tablet_design/features/home/widgets/home_screen_main_widget.dart';
+import 'package:tablet_design/features/home/widgets/home_screen_side_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -27,10 +28,9 @@ class HomeScreen extends StatelessWidget {
                   width: 24,
                 ),
                 Flexible(
-                    flex: 3,
-                    child: CustomScrollView(
-                      slivers: [SliverToBoxAdapter(child: Placeholder())],
-                    )),
+                  flex: 2,
+                  child: HomeScreenSideCard(),
+                )
               ],
             ),
           ),
