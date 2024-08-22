@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tablet_design/core/colors/main_app_colors.dart';
+import 'package:tablet_design/features/home/widgets/sales_calendar_widget.dart';
 import 'package:tablet_design/features/home/widgets/weekly_sales_graph_widget.dart';
 
 class SalesWidget extends StatelessWidget {
@@ -30,6 +31,7 @@ class SalesWidget extends StatelessWidget {
             ),
             height: 296,
             width: 281,
+            child: const SalesCalendarWidget(),
           ),
         ],
       ),

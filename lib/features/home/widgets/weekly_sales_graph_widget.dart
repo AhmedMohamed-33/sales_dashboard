@@ -10,7 +10,8 @@ class SalesGraphWidget extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: const EdgeInsets.all(24),
+          padding:
+              const EdgeInsets.only(left: 24, right: 24, top: 24, bottom: 12),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -19,7 +20,7 @@ class SalesGraphWidget extends StatelessWidget {
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 16,
-                    fontWeight: FontWeight.w500),
+                    fontWeight: FontWeight.bold),
               ),
               MaterialButton(
                   onPressed: () {},
