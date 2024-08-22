@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tablet_design/core/colors/main_app_colors.dart';
+import 'package:tablet_design/features/home/widgets/weekly_sales_chart.dart';
 
 class WeeklySalesWidget extends StatelessWidget {
   const WeeklySalesWidget({super.key});
@@ -17,6 +18,7 @@ class WeeklySalesWidget extends StatelessWidget {
             ),
             height: 296,
             width: 281,
+            child: WeeklySalesChartWidget(),
           ),
           const SizedBox(
             width: 24,

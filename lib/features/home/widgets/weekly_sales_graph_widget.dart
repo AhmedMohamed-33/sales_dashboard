@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tablet_design/core/colors/main_app_colors.dart';
+import 'package:tablet_design/features/home/widgets/line_chart_widget.dart';
 import 'package:tablet_design/gen/assets.gen.dart';
 
 class SalesGraphWidget extends StatelessWidget {
@@ -41,7 +42,7 @@ class SalesGraphWidget extends StatelessWidget {
           child: Row(
             children: [
               const SizedBox(
-                  width: 476 - 24, height: 170, child: Placeholder()),
+                  width: 476 - 24, height: 170, child: LineChartSample1()),
               SizedBox(
                 width: 138 - 48,
                 height: 216,
