@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:tablet_design/gen/assets.gen.dart';
 
@@ -25,25 +26,25 @@ class MainAppBar extends StatelessWidget {
             )),
           ),
           SvgPicture.asset(Assets.images.dashboard),
-          const Row(
+          Row(
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     'Uroos Fatima',
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Colors.white, fontSize: 12.sp),
                   ),
                   Text(
                     'uroos.design@gmail.com',
-                    style: TextStyle(color: Colors.grey),
+                    style: TextStyle(color: Colors.grey, fontSize: 12.sp),
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 15,
               ),
             ],

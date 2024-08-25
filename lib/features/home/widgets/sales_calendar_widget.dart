@@ -1,5 +1,6 @@
 import 'package:calendar_date_picker2/calendar_date_picker2.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tablet_design/core/colors/main_app_colors.dart';
 
 class SalesCalendarWidget extends StatelessWidget {
@@ -10,13 +11,13 @@ class SalesCalendarWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Padding(
-          padding: EdgeInsets.only(right: 24.0, top: 24, left: 24),
+        Padding(
+          padding: const EdgeInsets.only(right: 24.0, top: 24, left: 24),
           child: Text(
             'Calendar',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 16,
+              fontSize: 16.sp,
               fontWeight: FontWeight.bold,
             ),
           ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tablet_design/features/home/widgets/card_stats_widget.dart';
 import 'package:tablet_design/gen/assets.gen.dart';
 
@@ -10,9 +11,9 @@ class WeeklyBalanceWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text(
+        Text(
           'Hello, Uroos',
-          style: TextStyle(color: Colors.white, fontSize: 32),
+          style: TextStyle(color: Colors.white, fontSize: 32.sp),
         ),
         const SizedBox(
           height: 24,
@@ -23,7 +24,7 @@ class WeeklyBalanceWidget extends StatelessWidget {
             children: [
               CardStatsWidget(
                 title: 'Weekly balance',
-                value: '\$ 4,000.00',
+                value: '\$ 4,000',
                 imagePath: Assets.images.walletPng.path,
                 cardDotsPosition: CardDotsPosition.left,
                 backgroundColor: const Color(0xff0BF4C8),

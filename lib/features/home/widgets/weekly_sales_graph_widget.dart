@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tablet_design/core/colors/main_app_colors.dart';
 import 'package:tablet_design/features/home/widgets/line_chart_widget.dart';
 import 'package:tablet_design/gen/assets.gen.dart';
@@ -16,11 +17,11 @@ class SalesGraphWidget extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Text(
+              Text(
                 'Sales',
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 16,
+                    fontSize: 16.sp,
                     fontWeight: FontWeight.bold),
               ),
               MaterialButton(
@@ -28,11 +29,12 @@ class SalesGraphWidget extends StatelessWidget {
                   color: MainAppColors.primaryColor,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(6)),
-                  child: const Text(
+                  child: Text(
                     'Download',
                     style: TextStyle(
                         color: MainAppColors.cardColor,
-                        fontWeight: FontWeight.w500),
+                        fontWeight: FontWeight.w500,
+                        fontSize: 12.sp),
                   ))
             ],
           ),

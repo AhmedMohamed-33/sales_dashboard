@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tablet_design/core/colors/main_app_colors.dart';
 import 'package:tablet_design/features/home/widgets/card_dots_design.dart';
 
@@ -46,9 +47,9 @@ class CardStatsWidget extends StatelessWidget {
                     ),
                     Text(
                       title,
-                      style: const TextStyle(
+                      style: TextStyle(
                         color: MainAppColors.cardColor,
-                        fontSize: 16,
+                        fontSize: 16.sp,
                       ),
                     ),
                     const SizedBox(
@@ -56,9 +57,9 @@ class CardStatsWidget extends StatelessWidget {
                     ),
                     Text(
                       value,
-                      style: const TextStyle(
+                      style: TextStyle(
                         color: MainAppColors.cardColor,
-                        fontSize: 32,
+                        fontSize: 32.sp,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
@@ -67,12 +68,12 @@ class CardStatsWidget extends StatelessWidget {
                     // ),
                     TextButton(
                       onPressed: () {},
-                      child: const Text(
+                      child: Text(
                         'View entire list',
                         style: TextStyle(
                           decoration: TextDecoration.underline,
                           color: MainAppColors.cardColor,
-                          fontSize: 12,
+                          fontSize: 12.sp,
                         ),
                       ),
                     )

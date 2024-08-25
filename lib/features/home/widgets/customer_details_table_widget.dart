@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tablet_design/core/colors/main_app_colors.dart';
 
 class CustomerDetailsTable extends StatelessWidget {
@@ -11,13 +12,13 @@ class CustomerDetailsTable extends StatelessWidget {
       child: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: DataTable(
-          columns: const <DataColumn>[
+          columns: <DataColumn>[
             DataColumn(
               label: Text(
                 'ID',
                 style: TextStyle(
                     fontStyle: FontStyle.italic,
-                    fontSize: 16,
+                    fontSize: 16.sp,
                     color: Colors.white),
               ),
             ),
@@ -26,7 +27,7 @@ class CustomerDetailsTable extends StatelessWidget {
                 'Customer Name',
                 style: TextStyle(
                     fontStyle: FontStyle.italic,
-                    fontSize: 16,
+                    fontSize: 16.sp,
                     color: Colors.white),
               ),
             ),
@@ -35,7 +36,7 @@ class CustomerDetailsTable extends StatelessWidget {
                 'Date',
                 style: TextStyle(
                     fontStyle: FontStyle.italic,
-                    fontSize: 16,
+                    fontSize: 16.sp,
                     color: Colors.white),
               ),
             ),
@@ -44,7 +45,7 @@ class CustomerDetailsTable extends StatelessWidget {
                 'Amount',
                 style: TextStyle(
                     fontStyle: FontStyle.italic,
-                    fontSize: 16,
+                    fontSize: 16.sp,
                     color: Colors.white),
               ),
             ),
@@ -53,7 +54,7 @@ class CustomerDetailsTable extends StatelessWidget {
                 'Status',
                 style: TextStyle(
                     fontStyle: FontStyle.italic,
-                    fontSize: 16,
+                    fontSize: 16.sp,
                     color: Colors.white),
               ),
             ),

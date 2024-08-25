@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tablet_design/core/colors/main_app_colors.dart';
 import 'package:tablet_design/features/home/widgets/customer_details_table_widget.dart';
 
@@ -15,11 +16,11 @@ class CustomerDetailsWidget extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Text(
+              Text(
                 'Customer Details',
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 16,
+                    fontSize: 16.sp,
                     fontWeight: FontWeight.bold),
               ),
               MaterialButton(
@@ -27,10 +28,11 @@ class CustomerDetailsWidget extends StatelessWidget {
                   color: MainAppColors.primaryColor,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(6)),
-                  child: const Text(
+                  child: Text(
                     'Download',
                     style: TextStyle(
                         color: MainAppColors.cardColor,
+                        fontSize: 12.sp,
                         fontWeight: FontWeight.w500),
                   ))
             ],

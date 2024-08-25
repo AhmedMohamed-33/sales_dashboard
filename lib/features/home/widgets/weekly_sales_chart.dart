@@ -3,6 +3,7 @@ import 'dart:math';
 
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tablet_design/core/colors/main_app_colors.dart';
 
 class WeeklySalesChartWidget extends StatefulWidget {
@@ -43,11 +44,11 @@ class WeeklySalesChart extends State<WeeklySalesChartWidget> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                const Text(
+                Text(
                   'Weekly Sales',
                   style: TextStyle(
                     color: MainAppColors.primaryColor,
-                    fontSize: 24,
+                    fontSize: 24.sp,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -179,17 +180,17 @@ class WeeklySalesChart extends State<WeeklySalesChartWidget> {
             }
             return BarTooltipItem(
               '$weekDay\n',
-              const TextStyle(
+              TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
-                fontSize: 18,
+                fontSize: 18.sp,
               ),
               children: <TextSpan>[
                 TextSpan(
                   text: (rod.toY - 1).toString(),
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: Colors.white, //widget.touchedBarColor,
-                    fontSize: 16,
+                    fontSize: 16.sp,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -239,36 +240,36 @@ class WeeklySalesChart extends State<WeeklySalesChartWidget> {
   }
 
   Widget getTitles(double value, TitleMeta meta) {
-    const style = TextStyle(
+    var style = TextStyle(
       color: Colors.white,
       fontWeight: FontWeight.bold,
-      fontSize: 14,
+      fontSize: 14.sp,
     );
     Widget text;
     switch (value.toInt()) {
       case 0:
-        text = const Text('M', style: style);
+        text = Text('M', style: style);
         break;
       case 1:
-        text = const Text('T', style: style);
+        text = Text('T', style: style);
         break;
       case 2:
-        text = const Text('W', style: style);
+        text = Text('W', style: style);
         break;
       case 3:
-        text = const Text('T', style: style);
+        text = Text('T', style: style);
         break;
       case 4:
-        text = const Text('F', style: style);
+        text = Text('F', style: style);
         break;
       case 5:
-        text = const Text('S', style: style);
+        text = Text('S', style: style);
         break;
       case 6:
-        text = const Text('S', style: style);
+        text = Text('S', style: style);
         break;
       default:
-        text = const Text('', style: style);
+        text = Text('', style: style);
         break;
     }
     return SideTitleWidget(
