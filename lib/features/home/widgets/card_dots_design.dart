@@ -8,7 +8,7 @@ class CardDotsDesign extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     switch (cardDotsPosition) {
-      case CardDotsPosition.left:
+      case CardDotsPosition.right:
         return Positioned(
             bottom: 160 / 6,
             right: -8,
@@ -42,7 +42,7 @@ class CardDotsDesign extends StatelessWidget {
                 )
               ],
             ));
-      case CardDotsPosition.right:
+      case CardDotsPosition.left:
         return Positioned(
             bottom: 160 / 6,
             left: -8,

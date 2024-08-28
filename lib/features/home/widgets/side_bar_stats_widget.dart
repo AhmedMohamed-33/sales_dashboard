@@ -7,6 +7,7 @@ class SideBarStatsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SidebarStatsRowWidget(
           title: 'Total Intake',
@@ -39,26 +40,29 @@ class SidebarStatsRowWidget extends StatelessWidget {
   final String value;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(
-            title,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 12.sp,
+    return FittedBox(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              title,
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 12.sp,
+              ),
             ),
-          ),
-          Text(
-            value,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 12.sp,
+            const SizedBox(width: 24),
+            Text(
+              value,
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 12.sp,
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

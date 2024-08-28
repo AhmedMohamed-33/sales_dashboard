@@ -22,6 +22,7 @@ class HomeScreen extends StatelessWidget {
           child: SizedBox(
             height: MediaQuery.sizeOf(context).height - 100,
             child: const Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Flexible(flex: 5, child: HomeScreenMainWidget()),
                 SizedBox(
