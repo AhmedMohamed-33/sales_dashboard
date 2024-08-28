@@ -61,24 +61,28 @@ class MobileLayout extends StatelessWidget {
                 const SizedBox(height: 24),
                 const MobileWeeklySalesWidget(),
                 const SizedBox(height: 24),
-                Container(
-                  decoration: BoxDecoration(
-                    color: MainAppColors.cardColor,
-                    borderRadius: BorderRadius.circular(34),
+                Center(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: MainAppColors.cardColor,
+                      borderRadius: BorderRadius.circular(34),
+                    ),
+                    height: 296,
+                    width: 281,
+                    child: const SalesCalendarWidget(),
                   ),
-                  height: 296,
-                  width: 281,
-                  child: const SalesCalendarWidget(),
                 ),
                 const SizedBox(height: 24),
-                Container(
-                  decoration: BoxDecoration(
-                    color: MainAppColors.cardColor,
-                    borderRadius: BorderRadius.circular(34),
+                Center(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: MainAppColors.cardColor,
+                      borderRadius: BorderRadius.circular(34),
+                    ),
+                    height: 296,
+                    width: 281,
+                    child: WeeklySalesChartWidget(),
                   ),
-                  height: 296,
-                  width: 281,
-                  child: WeeklySalesChartWidget(),
                 ),
               ],
             ),
